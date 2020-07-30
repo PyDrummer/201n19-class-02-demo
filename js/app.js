@@ -22,20 +22,43 @@ var answerOne = prompt('Is the sky blue?');
 var lowerOne = answerOne.toLowerCase();
 console.log(lowerOne);
 //Yes answer
-if (lowerOne === 'yes' || lowerOne === 'y') {
-  //console.log('It was true');
-  alert('Correct!');
-  totalScore++;
-  console.log(`current score ${totalScore++}`);
+function questionOne(anythingOne){
+  if (anythingOne === 'yes' || anythingOne === 'y') {
+    //console.log('It was true');
+    var correctOne = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctOne;
+  }
+  else if (anythingOne === 'no' || anythingOne === 'n') {
+    //console.log('It was false');
+    var falseOne = alert('False!');
+    return falseOne;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
+
 }
-else if (lowerOne === 'no' || lowerOne === 'n') {
-  //console.log('It was false');
-  alert('False!');
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionOne(answerOne);
+
+
+// if (lowerOne === 'yes' || lowerOne === 'y') {
+//   //console.log('It was true');
+//   alert('Correct!');
+//   totalScore++;
+//   console.log(`current score ${totalScore++}`);
+// }
+// else if (lowerOne === 'no' || lowerOne === 'n') {
+//   //console.log('It was false');
+//   alert('False!');
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 //Second Question
 var answerTwo = prompt('A goldfish only has a memory of three seconds.');
