@@ -22,96 +22,209 @@ var answerOne = prompt('Is the sky blue?');
 var lowerOne = answerOne.toLowerCase();
 console.log(lowerOne);
 //Yes answer
-if (lowerOne === 'yes' || lowerOne === 'y') {
-  //console.log('It was true');
-  alert('Correct!');
-  totalScore++;
-  console.log(`current score ${totalScore++}`);
+function questionOne(anythingOne){
+  if (anythingOne === 'yes' || anythingOne === 'y') {
+    //console.log('It was true');
+    var correctOne = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctOne;
+  }
+  else if (anythingOne === 'no' || anythingOne === 'n') {
+    //console.log('It was false');
+    var falseOne = alert('False!');
+    return falseOne;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
+
 }
-else if (lowerOne === 'no' || lowerOne === 'n') {
-  //console.log('It was false');
-  alert('False!');
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionOne(answerOne);
+
+// old if statement logic.
+// if (lowerOne === 'yes' || lowerOne === 'y') {
+//   //console.log('It was true');
+//   alert('Correct!');
+//   totalScore++;
+//   console.log(`current score ${totalScore++}`);
+// }
+// else if (lowerOne === 'no' || lowerOne === 'n') {
+//   //console.log('It was false');
+//   alert('False!');
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 //Second Question
 var answerTwo = prompt('A goldfish only has a memory of three seconds.');
 var lowerTwo = answerTwo.toLowerCase();
 console.log(lowerTwo);
 //No answer
-if (lowerTwo === 'yes' || lowerTwo === 'y') {
-  //console.log('It was true');
-  alert('False!');
+function questionTwo(anythingTwo){
+  if (anythingTwo === 'yes' || anythingTwo === 'y') {
+    //console.log('It was true');
+    var falseTwo = alert('False!');
+    return falseTwo;
+  }
+  else if (anythingTwo === 'no' || anythingTwo === 'n') {
+    //console.log('It was false');
+    var correctOne = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctOne;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
 }
-else if (lowerTwo === 'no' || lowerTwo === 'n') {
-  //console.log('It was false');
-  alert('Correct!');
-  totalScore++;
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionTwo(lowerTwo);
+
+// old if statement logic.
+// if (lowerTwo === 'yes' || lowerTwo === 'y') {
+//   //console.log('It was true');
+//   alert('False!');
+// }
+// else if (lowerTwo === 'no' || lowerTwo === 'n') {
+//   //console.log('It was false');
+//   alert('Correct!');
+//   totalScore++;
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 //Third Question
 var answerThree = prompt('Is flying in an aeroplane safer than driving in a car?');
 var lowerThree = answerThree.toLowerCase();
 console.log(lowerThree);
 //Yes answer
-if (lowerThree === 'yes' || lowerThree === 'y') {
-  //console.log('It was true');
-  alert('Correct!');
-  totalScore++;
+function questionThree(anythingThree){
+  if (anythingThree === 'yes' || anythingThree === 'y') {
+    //console.log('It was true');
+    var correctThree = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctThree;
+  }
+  else if (anythingThree=== 'no' || anythingThree === 'n') {
+    //console.log('It was false');
+    var falseThree = alert('False!');
+    return falseThree;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
+
 }
-else if (lowerThree === 'no' || lowerThree === 'n') {
-  //console.log('It was false');
-  alert('False!');
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionThree(answerThree);
+
+// old if statement logic.
+// if (lowerThree === 'yes' || lowerThree === 'y') {
+//   //console.log('It was true');
+//   alert('Correct!');
+//   totalScore++;
+// }
+// else if (lowerThree === 'no' || lowerThree === 'n') {
+//   //console.log('It was false');
+//   alert('False!');
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 //Fourth Question
 var answerFour = prompt('Can a cat jump 6 times it\'s length?');
 var lowerFour = answerFour.toLowerCase();
 console.log(lowerFour);
 //Yes Answer
-if (lowerFour === 'yes' || lowerFour === 'y') {
-  //console.log('It was true');
-  alert('Correct!');
-  totalScore++;
+function questionFour(anythingFour){
+  if (anythingFour === 'yes' || anythingFour === 'y') {
+    //console.log('It was true');
+    var correctFour = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctFour;
+  }
+  else if (anythingFour === 'no' || anythingFour === 'n') {
+    //console.log('It was false');
+    var falseFour = alert('False!');
+    return falseFour;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
+
 }
-else if (lowerFour === 'no' || lowerFour === 'n') {
-  //console.log('It was false');
-  alert('False!');
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionFour(answerFour);
+
+// old if statement logic.
+// if (lowerFour === 'yes' || lowerFour === 'y') {
+//   //console.log('It was true');
+//   alert('Correct!');
+//   totalScore++;
+// }
+// else if (lowerFour === 'no' || lowerFour === 'n') {
+//   //console.log('It was false');
+//   alert('False!');
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 //Fifth Question
 var answerFive = prompt('Does an octopus has five hearts?');
 var lowerFive = answerFive.toLowerCase();
 console.log(lowerFive);
 //No Answer
-if (lowerFive === 'yes' || lowerFive === 'y') {
-  //console.log('It was false');
-  alert('False!');
+function questionFive(anythingFive){
+  if (anythingFive === 'yes' || anythingFive === 'y') {
+    //console.log('It was true');
+    var falseFive = alert('False!');
+    return falseFive;
+  }
+  else if (anythingFive === 'no' || anythingFive === 'n') {
+    //console.log('It was false');
+    var correctFive = alert('Correct!');
+    totalScore++;
+    console.log(`current score ${totalScore++}`);
+    return correctFive;
+  }
+  else {
+    //console.log('Not a good answer');
+    var noYes = alert('Not a yes or no answer!');
+    return noYes;
+  }
 }
-else if (lowerFive === 'no' || lowerFive === 'n') {
-  //console.log('It was false');
-  alert('Correct!');
-  totalScore++;
-}
-else {
-  //console.log('Not a good answer');
-  alert('Not a yes or no answer!');
-}
+questionFive(lowerFive);
+
+// old if statement logic.
+// if (lowerFive === 'yes' || lowerFive === 'y') {
+//   //console.log('It was false');
+//   alert('False!');
+// }
+// else if (lowerFive === 'no' || lowerFive === 'n') {
+//   //console.log('It was false');
+//   alert('Correct!');
+//   totalScore++;
+// }
+// else {
+//   //console.log('Not a good answer');
+//   alert('Not a yes or no answer!');
+// }
 
 var numTime = confirm('Let\'s switch it up! The next question is looking for a number instead of a yes/no or y/n answer.');
 console.log(`${numTime}`);
@@ -123,65 +236,125 @@ console.log(`Answer six is ${answerSix}`);
 var guessCount = 0;
 var allowedAttempts = 4;
 
-while (guessCount < allowedAttempts) {
-  console.log(`Answer six2 is ${answerSix}`);
-  //console.log(`Current ${guessCount}`)
-  var numAnswer = 2;
-  if (answerSix === numAnswer) {
-    alert('You got it!');
-    totalScore++;
-    console.log(`Score is ${totalScore}.`);
-    break;
-  }
-  else if (answerSix > numAnswer) {
-    alert('Too high!');
-    guessCount++;
-    console.log(`Current ${guessCount}`);
-    answerSix = parseInt(prompt('One plus one is: '));
-  }
-  else if (answerSix < numAnswer) {
-    alert('Too low!');
-    guessCount++;
-    console.log(`Current ${guessCount}`);
-    answerSix = parseInt(prompt('One plus one is: '));
-  }
-  if (guessCount === allowedAttempts) {
-    alert(`Too many guesses, the answer is ${numAnswer}`);
-    break;
+function questionSix(anythingSix){
+  while (guessCount < allowedAttempts) {
+    console.log(`Answer six2 is ${anythingSix}`);
+    //console.log(`Current ${guessCount}`)
+    var numAnswer = 2;
+    if (anythingSix === numAnswer) {
+      var correctSix = alert('You got it!');
+      totalScore++;
+      console.log(`Score is ${totalScore}.`);
+      return correctSix;
+      //break;
+    }
+    else if (anythingSix > numAnswer) {
+      alert('Too high!');
+      guessCount++;
+      console.log(`Current ${guessCount}`);
+      anythingSix = parseInt(prompt('One plus one is: '));
+    }
+    else if (anythingSix < numAnswer) {
+      alert('Too low!');
+      guessCount++;
+      console.log(`Current ${guessCount}`);
+      anythingSix = parseInt(prompt('One plus one is: '));
+    }
+    if (guessCount === allowedAttempts) {
+      var tooMany = alert(`Too many guesses, the answer is ${numAnswer}`);
+      return tooMany;
+      //break;
+    }
   }
 }
+questionSix(answerSix);
+
+// while (guessCount < allowedAttempts) {
+//   console.log(`Answer six2 is ${answerSix}`);
+//   //console.log(`Current ${guessCount}`)
+//   var numAnswer = 2;
+//   if (answerSix === numAnswer) {
+//     alert('You got it!');
+//     totalScore++;
+//     console.log(`Score is ${totalScore}.`);
+//     break;
+//   }
+//   else if (answerSix > numAnswer) {
+//     alert('Too high!');
+//     guessCount++;
+//     console.log(`Current ${guessCount}`);
+//     answerSix = parseInt(prompt('One plus one is: '));
+//   }
+//   else if (answerSix < numAnswer) {
+//     alert('Too low!');
+//     guessCount++;
+//     console.log(`Current ${guessCount}`);
+//     answerSix = parseInt(prompt('One plus one is: '));
+//   }
+//   if (guessCount === allowedAttempts) {
+//     alert(`Too many guesses, the answer is ${numAnswer}`);
+//     break;
+//   }
+// }
 
 confirm('Okay, time for a multipe choice question! Please answer with either A, B, C or D');
 //Question Seven
-var answerSeven = prompt('Which of the following are sea-dwelling dinosaurs? A) Argentinosaurus, B) Ammonite, C) Megalodon, D) All of the above!');
+var answerSeven = prompt('Which of the following are sea-dwelling dinosaurs? A) Argentinosaurus, B) Ammonite, C) Megalodon, D) Answers B and C');
 var upperSeven = answerSeven.toUpperCase();
 //console.log(upperSeven);
 var sevenAnswerArray = ['B', 'C', 'D'];
 var mGuessCount = 0;
 var mAllowedAttempts = 6;
 
-while (mGuessCount < mAllowedAttempts) {
-  //console.log(answerSeven);
-  //console.log(upperSeven);
-  if (upperSeven !== sevenAnswerArray[0] && upperSeven !== sevenAnswerArray[1] && upperSeven !== sevenAnswerArray[2]) {
-    alert('Sorry that was incorrect. Try again!');
-    answerSeven = prompt('Which of the following are sea-dwelling dinosaurs? A) Argentinosaurus, B) Ammonite, C) Megalodon, D) All of the above!');
-    upperSeven = answerSeven.toUpperCase();
-    mGuessCount++;
-    console.log(`Current Count ${mGuessCount}`);
+function questionSeven(anythingSeven){
+  while (mGuessCount < mAllowedAttempts) {
+    //console.log(answerSeven);
+    //console.log(upperSeven);
+    if (anythingSeven !== sevenAnswerArray[0] && anythingSeven !== sevenAnswerArray[1] && anythingSeven !== sevenAnswerArray[2]) {
+      alert('Sorry that was incorrect. Try again!');
+      anythingSeven = prompt('Which of the following are sea-dwelling dinosaurs? A) Argentinosaurus, B) Ammonite, C) Megalodon, D) Answers B and C').toUpperCase();
+      mGuessCount++;
+      console.log(`Current Count ${mGuessCount}`);
+    }
+    else {
+      console.log(`${upperSeven} is correct!`);
+      var correctSeven = alert('That is correct! the answers are B) Ammonite, C) Megalodon, D) Answers B and C');
+      totalScore++;
+      return correctSeven;
+      // break;
+    }
+    if (mGuessCount === mAllowedAttempts) {
+      var tooMany = alert(`Too many guesses. The answers were ${sevenAnswerArray[0]}, ${sevenAnswerArray[1]}, ${sevenAnswerArray[2]}.`);
+      return tooMany;
+      // break;
+    }
   }
-  else {
-    console.log(`${upperSeven} is correct!`);
-    alert('That is correct! the answers are B) Ammonite, C) Megalodon, D) All of the above!');
-    totalScore++;
-    break;
-  }
-  if (mGuessCount === mAllowedAttempts) {
-    alert(`Too many guesses. The answers were ${sevenAnswerArray[0]}, ${sevenAnswerArray[1]}, ${sevenAnswerArray[2]}.`);
-    break;
-  }
-
 }
+questionSeven(upperSeven);
+
+// old loop logic
+// while (mGuessCount < mAllowedAttempts) {
+//   //console.log(answerSeven);
+//   //console.log(upperSeven);
+//   if (upperSeven !== sevenAnswerArray[0] && upperSeven !== sevenAnswerArray[1] && upperSeven !== sevenAnswerArray[2]) {
+//     alert('Sorry that was incorrect. Try again!');
+//     answerSeven = prompt('Which of the following are sea-dwelling dinosaurs? A) Argentinosaurus, B) Ammonite, C) Megalodon, D) All of the above!');
+//     upperSeven = answerSeven.toUpperCase();
+//     mGuessCount++;
+//     console.log(`Current Count ${mGuessCount}`);
+//   }
+//   else {
+//     console.log(`${upperSeven} is correct!`);
+//     alert('That is correct! the answers are B) Ammonite, C) Megalodon, D) All of the above!');
+//     totalScore++;
+//     break;
+//   }
+//   if (mGuessCount === mAllowedAttempts) {
+//     alert(`Too many guesses. The answers were ${sevenAnswerArray[0]}, ${sevenAnswerArray[1]}, ${sevenAnswerArray[2]}.`);
+//     break;
+//   }
+
+// }
 
 
 

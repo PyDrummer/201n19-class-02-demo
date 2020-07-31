@@ -8,3 +8,7 @@ I'm also adding a 7th question which will be multiple choice with all answers sh
 I'll be implementing a loop for question 6 and 7.
 
 At the end i will tell them how many answers they got correct.
+
+7-30-20 
+Anthony was the navigator and Steve was the driver for this project lab 04.
+We updated the js code with function wrappers.
