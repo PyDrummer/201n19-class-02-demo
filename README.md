@@ -12,3 +12,6 @@ At the end i will tell them how many answers they got correct.
 7-30-20 
 Anthony was the navigator and Steve was the driver for this project lab 04.
 We updated the js code with function wrappers.
+
+8-1-20
+Deleted all console.logs that are no longer in use. Cleaned up the code a bit. Entering for the the Lab 05b.
